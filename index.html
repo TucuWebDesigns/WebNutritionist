@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="MatiasHerrera">
+<title>Nutritionist</title>
+<!------------Favicon----------------->	
+<link rel="apple-touch-icon" sizes="180x180" href="imagenes/logo/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imagenes/logo/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imagenes/logo/favicon-16x16.png">
+<link rel="manifest" href="imagenes/logo/site.webmanifest">
+<!------------Estilos----------------->
+<!--
+<link rel="stylesheet" href="normalize.css">
+-->
+<link rel="stylesheet" media="(min-width:800px)" href="estilos.css" />
+<link rel="stylesheet" media="(max-width:800px)" href="movil.css">
+
+<!------------Fuentes----------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Sarala&display=swap" rel="stylesheet">
+<!------------Iconos------------------>
+<script src="https://kit.fontawesome.com/af3a45c356.js" crossorigin="anonymous"></script>
+<!------------Slider------------------>	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script>
+$(function(){
+    $('.bxslider').bxSlider({
+	auto: true,
+    autoControls: false,
+    stopAutoOnClick: true,	
+     mode: 'fade',
+     captions: true,
+     slideWidth: 600
+    });
+  });
+</script> 
+<!------------Script------------------>		
+<script src="js/validaemail.js"></script>
+<!------------PHP--------------------->		
+	
+</head>
+<body>
+<header>
+	<div class="gridhead">
+		<div>
+			<article><a href="index.html" class="gridhead"></a></article>	
+		</div>
+		<div>
+			<input class="check" type="checkbox" id="btn-menu">
+			<label for="btn-menu"><i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i></label>
+			<nav class="menu-nav">
+			<article><a class="btnmenu" href="index.html">Inicio</a></article>
+			<article><a href="conocenos.html">Conóceme</a></article>	
+			<article><a href="programa.html">Programas</a></article>
+			<article><a href="blog.html">Blog</a></article>
+			<article><a href="contacto.html">Contacto</a></article>
+			</nav>
+		</div>
+		<div>
+			<article class="textohead">
+                <p class="hola"><b>Hola Soy la Nutricionista</b></p>
+				<p class="letra">Lucie Anderson</p><br>
+				<p>Facilisis teSmpore convallis! Arcu deserunt potenti, proident ex aliquam ratione architecto sem mollitia, dictum eros.</p><br><br>
+				<p class="holaletra"><b>Obtenga GRATIS su plan de alimentación para equilibrar las hormonas</b></p>
+				
+				<form action="" method="post" onsubmit="return validar()">
+					<input type="text" name="email1" id="email1" placeholder="Email" >
+                     <a target="_blank"><input class="btn" type="submit" value="Enviar" name="enviar" id="enviar"></a>
+				</form>
+				
+            </article>
+			<article>
+				<img class="banner" src="imagenes/nutrition-banner-03.png">
+			</article>
+		</div>
+		</div>
+</header>
+	<main>
+		<section class="slidermain">
+			<article class="slider">			
+			<div class="bxslider bx-slider">
+			  <div><img src="imagenes/img-01.jpg" width="100%" /></div>
+			  <div><img src="imagenes/img-02.jpg" width="100%" /></div>
+			  <div><img src="imagenes/img-04.jpg" width="100%" /></div>
+			</div>
+			</article>
+			<article class="experiencia">
+				<h1 align="center">15 años de experiencia como entrenadora personal y nutrición.</h1><br>
+				<p>Laboris optio est commodo aliqua ante purus beatae reprehenderit, temporibus dolore atione anr condimentum conubia unde nam pretium  netus numquam odit repellat! Justo quidem, quidem ac illum ration ulis lorem primis accusamus laborio sam sint incididunt venen.</p><br>
+				<img src="imagenes/signature.png" width="30%"><br>
+				<input class="btnexp" type="submit" value="Saber Más">
+			</article>
+		</section>
+		<section class="gridprogram">
+			<article>
+				<h1>¿Qué ofrezco para una buena salud?</h1>
+				<p>Maecenas ullam, Mollis suscipit sem adipisicing Eros dictumst proin idquia</p>
+			</article>
+			<article class="program"><p>Entrenamiento nutricional</p></article>
+			<article class="program"><p>Perdida de Peso</p></article>
+			<article class="program"><p>Recursos de cocina</p></article>
+			<article class="program"><p>Nutrición Deportiva</p></article>
+			<article class="program"><p>Equilibrio Cuerpo Mente</p></article>
+		</section>
+		<section class="gridcoment">
+            <article>
+                <h1>Lo que la gente esta diciendo</h1>
+                <p>Maecenas ullam, Mollis suscipit sem adipisicing eros dictums</p>
+            </article>
+            <article>
+                <div>
+					<img class="imgcoment" src="imagenes/client-2-free-img.jpg">
+					<p>"Arcu iste nihil dolorum, cupidatat asperiores quisque magnis laborum arftge ad voluptate,Fusce habitant aspernatur excepteur ut esse hello pellentesque auctortor, etiam tempus voluptatibus."</p><br>
+					<p><b>Philip Watson</b></p>Player
+				</div>               
+                <div>
+					<p>"Quaerat mus ut? Magni suscipit eaque impedit nemo? Ullamcorper autemris quaerat habita , facere dignissim irure netus, dolores!"</p><br>
+					<img class="imgcoment" src="imagenes/client-5-free-img.jpg">
+					<article class="nombcoment"><b>Emma Roberts</b><br>Traker</article>
+				</div>
+                <div>
+					<p>Impedit sollicitudin praesent cum eligendi justo aperiam eget tellus mconsectetuer, porro nostrud ad taciti nesciunt omnis cubili</p><br>
+					<img class="imgcoment" src="imagenes/client-1-free-img.jpg">
+					<article class="nombcoment"><b>Olivia Spencer</b><br>Coach</article>
+				</div>
+            </article>
+            
+            
+		</section>
+        <section class="gridbook">
+            <article><img src="imagenes/book.png"></article>
+            <article>
+				<h1>¡Nuevo libro! Come sano</h1>
+				<p>Una guía fácil de digerir para la salud y la felicidad desde adentro hacia afuera.</p><br>
+				<p>Posuere quis. Laoreet voluptatibus sunt aliquid ipsam delectus cupidatat soluta consectetuer praesentium ullam feugiat, corporis congue, aliquip venenatis</p><br>
+				<a href="#"><input class="btnbook" type="button" value="Ordenar ahora" width="50%"></a>
+            </article> 
+        </section>
+		<section class="gridsalud">
+			<article>
+				<h1>Artículos sobre salud & nutrición</h1>
+				<p>Maecenas ullam, Mollis suscipit sem adipisicing Eros dictumst</p>
+			</article>
+			<article class="gridnut">
+				<div><img src="imagenes/blog01-free-imh-1.jpg"></div>
+				<div>
+					<h2>Corrupti Explicabo Congue Placea Felis</h2>
+					<p>Dolor eum doloremque, commodo odit esse recusandae donec nulla commod</p>
+					<a href="#"><input  class="btnsalud" type="button" value="Leer más"></a>					
+				</div>
+			</article>
+			<article class="gridnut">
+				<div><img src="imagenes/blog02-free-img.jpg"></div>
+				<div>
+					<h2>Lobortis Sapien, Nisi Donec Perferendis</h2>
+					<p>Dolor eum doloremque, commodo odit esse recusandae donec nulla commod</p>
+					<a href="#"><input  class="btnsalud" type="button" value="Leer más"></a>					
+				</div>		
+			</article>
+			<article class="gridnut">
+				<div>
+					<img src="imagenes/image-12.jpg">
+				</div>
+				<div>
+				 	<h2>Nunc Officiis Tenetur Ad Duis Ipsam Magni Vehicula</h2>
+					<p>Dolor eum doloremque, commodo odit esse recusandae donec nulla commod</p>
+					<a href="#"><input  class="btnsalud" type="button" value="Leer más"></a>					
+				</div>
+			</article>
+		
+			<article><b>Presentado en:</b></article>
+			<article></article>
+			<article></article>
+			<article></article>
+			<article></article>
+			<article></article>
+		</section>
+	</main>
+<footer>
+	<section class="gridpie">
+		<article>
+			<p>Email<br><br>info@example.com<br>034-602-476-606</p>
+		</article>
+		<article>
+			<p><img src="imagenes/logo/nutrition-footer-logo.svg" width="13%"></p>
+			<h2>Lucie Anderson</h2>
+			<br>
+			<div>
+				<a href="#"><i class="fa-brands fa-facebook"  ></i></a>
+				<a href="#"><i class="fa-brands fa-instagram" ></i></a>
+				<a href="#"><i class="fa-brands fa-twitter" ></i></a>
+				<a href="#"><i class="fa-brands fa-whatsapp" ></i></a>
+			</div>
+			<br><br>
+			<p>Copyright © 2023 Nutritionist</p>
+		</article>
+		<article>
+			<p>Dirección<br><br>Carrer Milá 32 <br>Arenal - Palma de Mallorca</p>
+		</article>
+	</section>
+</footer>
+</body>
+</html>

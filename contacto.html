@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="MatiasHerrera">
+<title>Nutritionist</title>
+<!------------Favicon----------------->	
+<link rel="apple-touch-icon" sizes="180x180" href="imagenes/logo/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imagenes/logo/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imagenes/logo/favicon-16x16.png">
+<link rel="manifest" href="imagenes/logo/site.webmanifest">
+<!------------Estilos----------------->
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" media="(min-width:800px)" href="estilos.css" />
+<link rel="stylesheet" media="(max-width:800px)" href="movil.css">
+<script src="js/valida.js"></script>
+<!------------Fuentes----------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Sarala&display=swap" rel="stylesheet">
+<!------------Slider------------------>	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<!------------Iconos------------------>
+<script src="https://kit.fontawesome.com/af3a45c356.js" crossorigin="anonymous"></script>
+</head>
+	
+<header>
+	<div class="headcontacto">
+		<div>
+			<article><a href="index.html" class="gridhead"></a></article>	
+		</div>
+		<div>
+			<input class="check" type="checkbox" id="btn-menu">
+			<label for="btn-menu"><i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i></label>
+			<nav class="menu-nav">
+			<article><a href="index.html">Inicio</a></article>
+			<article><a href="conocenos.html">Conóceme</a></article>	
+			<article><a href="programa.html">Programas</a></article>
+			<article><a href="blog.html">Blog</a></article>
+			<article><a class="btnmenu" href="contacto.html">Contacto</a></article>
+			</nav>
+		</div>
+		<div><b>Contáctanos</b></div>
+		
+	</div>
+</header>
+<body style="background-color: #FAFAFA">
+	<main>
+		<section class="gridcontacto">
+			<article class="formcontacto">
+				<form action="" method="put" onsubmit="return validar()">
+					<label><b>Enviar Mensaje</b></label>
+					<input type="text" name="nombre" id="nombre" placeholder="Nombre" >
+					<input type="tel" name="teléfono" id="tel" placeholder="Teléfono">
+					<input type="text" name="email" id="email" placeholder="Email" >
+					<textarea cols="40" rows="4" placeholder="Mensaje" id="mensaje" name="mensaje" ></textarea>
+					<input  type="submit" value="Enviar" name="enviar" id="enviar" class="btcontacto">
+				</form>
+			</article>
+			<article>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.458528488856!2d2.7512184756725513!3d39.504139710676995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12979648c6490d2f%3A0x93f295bc54f73741!2sC.%20Mil%C3%A1n%2C%2032%2C%2007600%20Palma%2C%20Islas%20Baleares!5e0!3m2!1ses!2ses!4v1697562118175!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</article>
+		</section>
+		
+	</main>
+</body>	
+<footer>
+	<section class="gridpie">
+		<article>
+			<p>Email<br><br>info@example.com<br>034-602-476-606</p>
+		</article>
+		<article>
+			<p><img src="imagenes/logo/nutrition-footer-logo.svg" width="13%"></p>
+			<h2>Lucie Anderson</h2>
+			<br>
+			<div>
+				<a href="#"><i class="fa-brands fa-facebook"  ></i></a>
+				<a href="#"><i class="fa-brands fa-instagram" ></i></a>
+				<a href="#"><i class="fa-brands fa-twitter" ></i></a>
+				<a href="#"><i class="fa-brands fa-whatsapp" ></i></a>
+			</div>
+			<br><br>
+			<p>Copyright © 2023 Nutritionist</p>
+		</article>
+		<article>
+			<p>Dirección<br><br>Carrer Milá 32 <br>Arenal - Palma de Mallorca</p>
+		</article>
+	</section>
+</footer>
+</html>

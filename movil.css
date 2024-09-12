@@ -1,0 +1,1110 @@
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;	
+}
+
+/*----------------------------------------------------------Index------------------------------------------------------------------------------*/
+/*-----------------------cabecera---------------------------*/
+.gridhead{
+	border:none black 2px;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-rows:80px 1fr;
+}
+/*-----------------------Menu navegacion--------------------*/
+.menu-nav{
+	border:none 2px black;
+	width: 100%;
+	font-size: 16px;
+	font-family: "PT Sans", "Sarala";
+	background-color: #F3F7FF;
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	left: 0px;
+	top:80px;	
+}
+.menu-nav article{
+	border:none 1px black;
+	padding: 0 1em;
+	margin: 30px 0;
+}
+.menu-nav a{
+	border:none 2px black;
+	text-decoration: none;
+	color: black;
+}
+.menu-nav .btnmenu{
+	color:#70B230;
+}
+/*-------------------------Menu-----------------------------*/
+.check{
+	display: none;
+}
+#btn-menu:checked ~ .menu-nav{
+	z-index: 1;
+	position: absolute;
+	transition: all 0s;	
+	opacity: 1;
+}
+header i{
+	padding: 15px 8px;
+	cursor: pointer;
+}
+.gridhead div:nth-child(1){
+	display: flex;
+}
+.gridhead div:nth-child(1) article:nth-child(1){
+    border:none 5px red;
+    background-image: url(imagenes/logo/nutrition-logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+	background-position: left;
+	cursor:pointer;
+	margin: 10px;
+	width: 300px;
+}
+.gridhead div:nth-child(2){
+	background-color: #70B230;
+    border:none 3px red;
+    display: flex;
+	margin: auto;
+	border-radius: 3px;
+	margin-right: 20px;
+	padding: 5px;	
+}
+.gridhead div:nth-child(3){
+	grid-column: 1/3;
+	border: none 2px blue;
+	display: flex;
+	flex-direction: column-reverse;
+	height: 1050px;
+	background-image: linear-gradient(rgba(0, 15, 43, 0.85), rgba(0, 15, 43, 0.85)), url(imagenes/home-banner.jpg);
+    background-repeat: no-repeat;
+	clip-path: polygon(0 0, 100% 0%, 100% 93%, 51% 100%, 0 93%);
+	background-size: cover;
+}
+.banner{
+	position: absolute;
+	width: 100%;
+	top:100px;
+	left:0px;
+	margin:0 auto;
+	padding: 0 20px;
+}
+.textohead{
+	position: absolute;
+	top:550px;
+	font-family: "Sarala", "PT Sans";
+	color:white;
+	text-align: justify;
+	padding: 20px;
+}
+.letra{
+	font-size: 40px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+.textohead  p:nth-child(4){
+	font-size: 14px;
+	letter-spacing: 0.5px
+}
+.hola{
+	color:#70B230;
+	font-size: 17px;
+}
+.holaletra{
+	font-size: 16px;
+	text-align: center;
+}
+header form{
+	border:none 5px red;
+	
+}
+header input{ 
+	font-size: 20px;
+	margin-left: 0px;
+	border: none 2px red;
+	border-radius: 3px;
+	font-family: "PT Sans", "Sarala";
+	margin-top: 20px;
+	width: 100%;
+	height: 50px;
+}
+.btn{
+	background: #70B230;
+	padding: 10px;
+	font-family: "PT Sans","Sarala";
+	border-radius: 5px;
+	font-size: 22px;
+	color:white;
+	width: 100%;
+	cursor:pointer;
+	margin-left: 0px;
+}
+::placeholder{
+	font-size: 25px;
+	
+}	
+/*---------------bloque slider----------------------------*/
+.slidermain{
+	border:none 5px black;
+	background-image: url(imagenes/1-4.png);
+	display: grid;
+	grid-template-rows:400px 50%;
+	height: 850px;
+	justify-content: center;
+	align-content: center;
+	margin: 50px 0;
+}
+.slider{
+	border:none 5px red;
+	padding:20px 10px;
+	height: 350px;
+}
+.bx-slider{
+	box-shadow: 10px 10px 50px 50px rgba(128, 128, 128, 0.29);
+}
+.experiencia{
+	border:none 2px black;
+	font-family:  "PT Sans";
+	padding: 0px 10px;
+	color:gray;
+	
+}
+.experiencia h1{
+	font-size: 33px;
+	font-family: "PT Sans";
+	color:black;
+}
+.btnexp{
+	border: none 2px red;
+	background: #70B230;
+	padding: 10px;
+	font-family: "PT Sans","Sarala";
+	color:white;
+	cursor:pointer;
+	font-size: 18px;
+	border-radius: 5px;
+	width: 160px;
+	position: relative;
+	left: 50px;
+	top: 50px
+}
+/*---------------bloque program---------------------------*/
+.gridprogram{
+	border: none 5px violet;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 200px 250px 250px 250px 250px 250px;
+    
+}
+.gridprogram article:nth-child(1){
+	border: none 2px black;
+	display:grid;
+	text-align: center;
+	font-family: "Sarala";
+	padding:0 20px;
+}
+.gridprogram article:nth-child(1) h1{
+	font-size: 30px;
+	color:#000F2B;
+}
+.gridprogram article:nth-child(1) p{
+	font-size: 14px;
+	color: gray;
+   
+}
+.gridprogram article:nth-child(2){
+	background-image: linear-gradient(transparent, rgba(0, 15, 43, 0.94)), url(imagenes/service-01.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-position:center;
+
+}
+.gridprogram article:nth-child(3){
+	background-image: linear-gradient(transparent, rgba(0, 15, 43, 0.94)), url(imagenes/ser03-free-img.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-position: center;
+
+}
+.gridprogram article:nth-child(4){
+	background-image: linear-gradient(transparent, rgba(0, 15, 43, 0.94)), url(imagenes/service-05.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-position: center;
+
+}
+.gridprogram article:nth-child(5){
+	background-image: linear-gradient(transparent, rgba(0, 15, 43, 0.94)), url(imagenes/ser02-free-img.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-position: center;
+
+}
+.gridprogram article:nth-child(6){
+	background-image: linear-gradient(transparent, rgba(0, 15, 43, 0.94)), url(imagenes/service-04.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+.program{
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	color:white;
+	font-family: "PT Sans";
+	font-size: 25px;
+	padding-bottom: 30px;
+}
+.gridprogram article:nth-child(2):hover{
+	background-image:url(imagenes/service-01.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+.gridprogram article:nth-child(3):hover{
+	background-image: url(imagenes/ser03-free-img.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-position: center;    
+}
+.gridprogram article:nth-child(4):hover{
+	background-image: url(imagenes/service-05.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-position: center;
+♀}
+.gridprogram article:nth-child(5):hover{
+	background-image: url(imagenes/ser02-free-img.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-position: center;
+
+}
+.gridprogram article:nth-child(6):hover{
+	background-image: url(imagenes/service-04.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-position: center;
+
+}
+/*---------------bloque comentario------------------------*/
+.gridcoment{
+    border:none 5px red;
+    background-image: url(imagenes/parallax-1.png);
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 1000px ; 
+}
+.gridcoment article:nth-child(1){
+	border: none 2px black;
+	display:grid;
+	text-align: center;
+	font-family: "Sarala";
+	padding: 20px;
+}
+.gridcoment article:nth-child(1) h1{
+	font-size: 30px;
+	padding-top: 50px;
+	color:#000F2B;
+}
+.gridcoment article:nth-child(1) p{
+	font-size: 16px;
+	color: gray;
+ 
+}
+.gridcoment article:nth-child(2){
+    border:none 5px yellow;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  350px 250px 250px;
+	gap: 2rem;
+  }
+.gridcoment article:nth-child(2) div{
+    border:none 2px red;
+    background: white;
+    font-family: "PT Sans", "Sarala";
+    color:#4b4f58;
+    font-size: 18px;
+    box-shadow: 5px 5px 15px 5px rgba(128, 128, 128, 0.29);
+    
+}
+.gridcoment article:nth-child(2) div:nth-child(1){
+    border:none 2px orange;
+	margin: auto;
+    width: 85%;
+    height: 320px; 
+    padding: 30px;
+    
+}
+.gridcoment article:nth-child(2) div:nth-child(2){
+    border:none 2px orange;
+	margin: auto;
+    width: 85%;
+    height: 250px; 
+    padding: 30px;
+  
+   
+}
+.gridcoment article:nth-child(2) div:nth-child(3){
+    border:none 2px orange;
+	margin:auto;
+	width: 85%;
+    height: 250px; 
+    padding: 30px;
+   
+}
+.imgcoment{
+    border-radius: 200px;
+    width: 15%;
+}
+.nombcoment{
+    position:relative;
+    top:-50px;
+    left: 50px;
+}
+/*---------------bloque book------------------------------*/
+.gridbook{
+    border:none 5px green;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: 500px 350px;
+    background-image: url(imagenes/section03-free-img.jpg);
+	color:gray;
+	font-family: "Sarala","PT Sans";
+}
+.gridbook img{
+	margin: auto;
+    width: 80%;
+    height: 80%;
+}
+.gridbook article{
+    border:none 2px red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gridbook article:nth-child(2){
+	padding: 20px;
+}
+.gridbook h1{
+	font-family: "Sarala","PT Sans";
+	font-size: 30px;
+	text-align: center;
+	color:black;
+	padding-bottom: 10px;
+}
+.gridbook p{
+	color:gray;
+	font-size: 14px;
+}
+.btnbook{
+	background: #70B230;
+	padding: 15px;
+	font-family: "PT Sans","Sarala";
+	border-radius: 5px;
+	font-size: 16px;
+	color:white;
+	cursor:pointer;
+	border: transparent;
+		
+}
+/*-------------bloque salud & Nutrición-------------------*/
+.gridsalud{
+	border:none 5px blue;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 230px 500px 500px 500px 100px 100px 100px 100px 100px 100px;
+	grid-auto-flow: dense;
+	overflow: hidden;
+
+}
+.gridsalud article:nth-child(1){
+	border: none 2px black;
+	text-align: center;	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	font-family: "Sarala", "PT Sans";
+}
+.gridsalud article:nth-child(1) h1{
+	font-size: 30px;
+	color:#000F2B;
+}
+.gridsalud article:nth-child(1) p{
+	font-size: 14.5px;
+	color: gray;
+}
+.gridsalud article:nth-child(2){
+	border: none 2px black;
+	box-shadow: 5px 5px 15px 5px rgba(128, 128, 128, 0.29); 
+	margin-bottom: 20px;
+}
+.gridsalud article:nth-child(3){
+	border: none 2px red;
+	box-shadow: 5px 5px 15px 5px rgba(128, 128, 128, 0.29); 
+	margin-bottom: 20px;
+}
+.gridsalud article:nth-child(4){
+	border: none 2px red;
+	box-shadow: 5px 5px 15px 5px rgba(128, 128, 128, 0.29); 
+}
+.gridnut{
+	border:none 2px brown;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 250px 250px;
+	grid-auto-flow: dense;
+	overflow: hidden;
+	margin-left: 10px;
+	margin-right: 10px;	
+}
+.gridnut div{
+	border:none 2px black;
+	overflow: hidden;
+}
+.gridnut img{
+	width: 100%;	
+}
+.gridnut div:nth-child(2){
+	text-align: center;
+	padding: 10px;
+	padding-top: 20px;
+	font-family: "Sarala", "PT Sans";	
+}
+.btnsalud{
+	background: #70B230;
+	padding: 10px;
+	font-family: "PT Sans","Sarala";
+	border-radius: 5px;
+	font-size: 16px;
+	color:white;
+	margin-top: 20px;
+	width: 150px;
+	cursor: pointer;
+	border:transparent;
+}
+.gridnut h2{
+	font-size: 20px;
+}
+.gridnut p {
+	color:gray;
+	margin-top: 10px;
+	font-size: 14px;
+}
+.gridsalud article:nth-child(5){
+	border:none 5px red;
+	font-family: "sarala", "PT Sans";
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+.gridsalud article:nth-child(6){
+	background-image: url(imagenes/logo/logo-1.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	
+}
+.gridsalud article:nth-child(7){
+	background-image: url(imagenes/logo/logo-2.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.gridsalud article:nth-child(8){
+	background-image: url(imagenes/logo/logo-3.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+}
+.gridsalud article:nth-child(9){
+	background-image: url(imagenes/logo/logo-4.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;	
+
+}
+.gridsalud article:nth-child(10){
+	background-image: url(imagenes/logo/logo-5.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position:center;
+	background-size: contain;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;	
+
+}
+/*-----------------------Footer---------------------------*/
+.gridpie{
+	border:none 5px red;
+	display: grid;
+	grid-template-columns: 400px;
+	grid-template-rows: 250px 250px 250px;
+	grid-auto-flow: dense;
+	overflow: hidden;
+	background-image: linear-gradient(rgba(0, 15, 43, 0.85), rgba(0, 15, 43, 0.85)), url(imagenes/footer-banner-01.jpg);
+	background-position: center;
+}
+.gridpie article{
+	border:none 2px red;
+	font-family: "Sarala", "PT Sans";
+	font-size: 14.5px;
+	color:white;
+	text-align: center;
+}
+.gridpie article:nth-child(1){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.gridpie article:nth-child(2){
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.gridpie a{
+	padding: 10px;
+	width: 100%;
+}
+.gridpie article:nth-child(3){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+.gridpie h2{
+	font-size: 25px;
+}
+.gridpie i{
+	font-size: 18px;
+	color:white;
+}
+.gridpie i:hover{
+	color:#70B230;
+}
+
+/*-------------------------------------------------------Conoceme------------------------------------------------------------------------------*/
+/*-----------------------cabecera---------------------------*/
+.headconocenos{
+	border:none black 2px;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-rows:90px 1fr;
+}
+.headconocenos div:nth-child(1){
+	display: flex;
+}
+.headconocenos div:nth-child(1) article:nth-child(1){
+    border:none 5px red;
+    background-image: url(imagenes/logo/nutrition-logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+	background-position: left;
+	cursor:pointer;
+	margin: 10px;
+	width: 300px;
+}
+.headconocenos div:nth-child(2){
+	background-color: #70B230;
+    border:none 3px red;
+    display: flex;
+	margin: auto;
+	border-radius: 3px;
+	margin-right: 20px;
+	padding: 5px;	
+}
+.headconocenos div:nth-child(3){
+	border: none 2px red;
+	height: 180px;
+	grid-column: 1/3;
+	background-image: linear-gradient(rgba(0, 15, 43, 0.85), rgba(0, 15, 43, 0.85)), url(imagenes/about-banner.jpg);
+    background-repeat: no-repeat;
+	background-position: center;
+	clip-path: polygon(0 0, 100% 0%, 100% 93%, 51% 100%, 0 93%);
+	background-size: cover;
+	text-align:center;
+	color:white;
+	font-family: "Sarala", "PT Sans";
+	font-size: 50px;
+}
+.headconocenos b{
+	position: relative;
+	top:35%;
+}
+/*-----------------------Presentación---------------------------*/
+.gridpresentacion{
+	border:none 2px red;
+	display: grid;
+	grid-template-columns: 400px;
+	grid-template-rows:600px 500px;
+	justify-content: center;
+	grid-auto-flow: dense;
+	margin-top: 50px;
+}
+.gridpresentacion article:nth-child(1){
+	background-image: url(imagenes/image-01.jpg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.gridpresentacion article:nth-child(3){
+	border:none 2px blue;
+	font-family: "PT Sans";
+	font-size: 16px;
+	grid-column: 1/3;
+}
+.gridpresentacion article:nth-child(3) h1{
+	font-family: "Sarala", "PT Sans";
+	font-size: 25px;
+	text-align: center;
+	padding-top: 50px;
+}
+.gridpresentacion article:nth-child(3) p{
+	font-family: "PT Sans";
+	color:gray;
+	font-size: 14.5px;
+	padding: 0 20px;
+	text-align: justify;
+}
+.gridpresentacion article:nth-child(3) img{
+	position: relative;
+	left:200px;
+	width: 40%;	
+}
+/*-----------------------banner---------------------------*/
+.gridbanner{
+	border:none 2px black;
+	display: grid;
+	grid-template-columns: 400px;
+	grid-template-rows: 200px 200px 200px 200px;
+	justify-content: center;
+	background-color: #F3F7FF;
+}
+.flexbanner{
+	display: flex;
+	font-family: "Sarala", "PT Sans";
+	text-align: justify;
+	justify-content: center;
+	align-items: center;
+}
+.gridbanner article:nth-child(1){
+	border:none 2px black;
+	justify-content: center;
+	padding-left: 100px;
+}
+.gridbanner article:nth-child(3){
+	border:none 2px black;
+	justify-content: center;
+}
+.iconos i{
+	padding-right: 20px;
+}
+.iconos{
+	padding: 10px;
+}
+.present{
+	border:none 2px black;
+	background-image: url(imagenes/1-4.png);
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 800px 200px;
+	height: 850px;
+	justify-content: center;
+	align-content: center;
+}
+.present article:nth-child(2){
+	position: relative;
+	top:550px;
+}
+.exp{
+	position: absolute;
+	border:none 2px black;
+	font-family:  "PT Sans";
+	padding: 70px 50px;
+	color:gray;
+}
+.exp h1{
+	font-size: 33px;
+	font-family: "PT Sans";
+	color:black;
+}
+/*-------------------------------------------------------programa------------------------------------------------------------------------------*/
+/*-----------------------cabecera---------------------------*/
+.headprograma{
+	border:none black 2px;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-rows:90px 1fr;
+}
+.headprograma div:nth-child(1){
+	display: flex;
+}
+.headprograma div:nth-child(1) article:nth-child(1){
+    border:none 5px red;
+    background-image: url(imagenes/logo/nutrition-logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+	background-position: left;
+	cursor:pointer;
+	margin: 10px;
+	width: 300px;
+}
+.headprograma div:nth-child(2){
+	background-color: #70B230;
+    border:none 3px red;
+    display: flex;
+	margin: auto;
+	border-radius: 3px;
+	margin-right: 20px;
+	padding: 5px;	
+}
+.headprograma div:nth-child(3){
+	border: none 2px red;
+	height: 180px;
+	grid-column: 1/3;
+	background-image: linear-gradient(rgba(0, 15, 43, 0.85), rgba(0, 15, 43, 0.85)), url(imagenes/nutric01-free-img.jpg);
+    background-repeat: no-repeat;
+	background-position: center;
+	clip-path: polygon(0 0, 100% 0%, 100% 93%, 51% 100%, 0 93%);
+	background-size: cover;
+	text-align:center;
+	color:white;
+	font-family: "Sarala", "PT Sans";
+	font-size: 30px;
+}
+.headprograma b{
+	position: relative;
+	top:35%;
+}
+/*-----------------------cuerpo---------------------------*/
+.gridcuerpo{
+	border:none 2px black;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 600px 600px 600px 600px;
+	grid-auto-flow: dense;
+	justify-content: center;
+}
+.gridcuerpo article:nth-child(1){
+	background-image: url(imagenes/parallax-1.png);
+}
+.gridcuerpo article:nth-child(2){
+	background-color: #000F2B;
+	background-image: url(imagenes/1-4.png);
+	background-repeat: no-repeat;
+}
+.gridcuerpo article:nth-child(3){
+	background-image: url(imagenes/parallax-1.png);
+}
+.gridcuerpo article:nth-child(4){
+	background-color: #000F2B;
+	background-image: url(imagenes/1-4.png);
+	background-repeat: no-repeat;
+}
+.cuerpo{
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	gap: 2rem;
+}
+.cuerpo div{
+	width: 90%;
+}
+.cuerpo img{
+	width: 90%;
+}
+.cuerpo h1{
+	font-size: 28px;
+	font-family: "Sarala", "PT Sans";
+}
+.cuerpo p{
+	font-family: "PT Sans";
+	font-size: 14px;
+}
+/*--------------------------------------------------------blog---------------------------------------------------------------------------------*/
+/*-----------------------cabecera---------------------------*/
+.headblog{
+	border:none black 2px;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-rows:90px 1fr;
+}
+.headblog div:nth-child(1){
+	display: flex;
+}
+.headblog div:nth-child(1) article:nth-child(1){
+    border:none 5px red;
+    background-image: url(imagenes/logo/nutrition-logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+	background-position: left;
+	cursor:pointer;
+	margin: 10px;
+	width: 300px;
+}
+.headblog div:nth-child(2){
+	background-color: #70B230;
+    border:none 3px red;
+    display: flex;
+	margin: auto;
+	border-radius: 3px;
+	margin-right: 20px;
+	padding: 5px;	
+}
+.headblog div:nth-child(3){
+	border: none 2px red;
+	height: 180px;
+	grid-column: 1/3;
+	background-image: linear-gradient(rgba(0, 15, 43, 0.85), rgba(0, 15, 43, 0.85)), url(imagenes/image-10.jpg);
+    background-repeat: no-repeat;
+	background-position: center;
+	clip-path: polygon(0 0, 100% 0%, 100% 93%, 51% 100%, 0 93%);
+	background-size: cover;
+	text-align:center;
+	color:white;
+	font-family: "Sarala", "PT Sans";
+	font-size: 50px;
+}
+.headblog b{
+	position: relative;
+	top:35%;
+}
+/*-----------------------cuerpo---------------------------*/
+.gridblog{
+    border:none 2px black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 300px 300px;
+    justify-content: center;
+    gap:2rem;
+    margin-bottom: 50px;
+}
+.gridblog article:nth-child(1){
+    text-align: center;
+    font-family: "Sarala", "PT Sans";
+	padding: 0 20px;
+}
+.gridblog article:nth-child(1) h1{
+    font-family: "Sarala";
+    font-size:30px;
+    margin-top: 50px;
+	padding-bottom: 20px
+}
+.gridblog article:nth-child(1) p{
+    color:gray;
+    font-size: 14px;
+}
+.gridblog article:nth-child(2){
+    background-image:linear-gradient(rgba(0, 15, 43, 0.7), rgba(0, 15, 43, 0.7)), url(imagenes/blog02-free-img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 10px;
+	margin: 0 20px;
+}
+.gridblog article:nth-child(3){
+    background-image:linear-gradient(rgba(0, 15, 43, 0.7), rgba(0, 15, 43, 0.7)), url(imagenes/blog01-free-imh-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 10px;
+	margin: 0 20px;
+}
+.gridblog article:nth-child(2) h1{
+    font-family: "Sarala";
+    color:white;
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.gridblog article:nth-child(2) p{
+    font-family: "PT Sans";
+    color:white;
+    padding-bottom: 30px;
+	font-size: 14px;
+}
+.gridblog article:nth-child(3) h1{
+    font-family: "Sarala";
+    color:white;
+    font-size: 20px;   
+    padding-bottom: 20px;
+    margin-top: 20px;
+
+}
+.gridblog article:nth-child(3) p{
+    font-family: "PT Sans";
+    color:white;
+    padding-bottom: 30px;
+	font-size: 14px;
+}
+.btblog{
+    font-family: "PT Sans";
+    font-size: 15px;
+    padding: 10px 30px;   
+    cursor: pointer;
+}
+.gridblog a{
+    text-decoration: none;
+}
+.pepe{
+    border:none 2px black;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0 450px 450px 420px;
+	grid-auto-flow: dense;
+	overflow: hidden;
+	padding: 20px 0;
+}
+/*-------------------------------------------------------contacto------------------------------------------------------------------------------*/
+/*-----------------------cabecera---------------------------*/
+.headcontacto{
+	border:none black 2px;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-rows:90px 1fr;
+}
+.headcontacto div:nth-child(1){
+	display: flex;
+}
+.headcontacto div:nth-child(1) article:nth-child(1){
+    border:none 5px red;
+    background-image: url(imagenes/logo/nutrition-logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+	background-position: left;
+	cursor:pointer;
+	margin: 10px;
+	width: 300px;
+}
+.headcontacto div:nth-child(2){
+	background-color: #70B230;
+    border:none 3px red;
+    display: flex;
+	margin: auto;
+	border-radius: 3px;
+	margin-right: 20px;
+	padding: 5px;	
+}
+.headcontacto div:nth-child(3){
+	border: none 2px red;
+	height: 180px;
+	grid-column: 1/3;
+	background-image: linear-gradient(rgba(0, 15, 43, 0.85), rgba(0, 15, 43, 0.85)), url(imagenes/image-08.jpg);
+    background-repeat: no-repeat;
+	background-position: center;
+	clip-path: polygon(0 0, 100% 0%, 100% 93%, 51% 100%, 0 93%);
+	background-size: cover;
+	text-align:center;
+	color:white;
+	font-family: "Sarala", "PT Sans";
+	font-size: 50px;
+}
+.headcontacto b{
+	position: relative;
+	top:35%;
+}
+/*-----------------------cuerpo---------------------------*/
+.gridcontacto{
+    border:none 2px black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 650px 500px;
+	justify-content: center; 
+	margin-top: 50px;
+	overflow: hidden;
+	background-color: #FAFAFA;
+	gap:2rem;
+}
+.gridcontacto article{
+    border:none 2px green; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #FAFAFA;
+	gap:2rem;
+}
+.formcontacto form{
+	border:none 2px red;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	height: 650px;
+	width: 380px;
+	padding:0 40px;	
+	gap:2rem;
+	background-color: #ffffff;
+	box-shadow: 0 0 20px 2px #c4c1c1;
+} 
+.formcontacto label{
+	border:none 2px black;
+	font-family: "Sarala";
+	font-size: 30px;
+	color:#000f2b;
+	text-align: center;
+	padding:50px 0;
+}
+.formcontacto input{
+	padding: 15px;
+	background-color: #FAFAFA;
+	border:solid 2px #ececec;
+}
+.formcontacto textarea{
+	padding: 10px;
+	background-color: #FAFAFA;
+	border:solid 2px #ececec;
+}
+.btcontacto{
+    background-color: #70B230;
+	padding: 20px;
+	font-family: "PT Sans","Sarala";
+	border-radius: 5px;
+	font-size: 16px;
+	color:white;
+	margin-top: 20px;
+	width: 150px;
+	cursor: pointer;
+	
+	
+}
+::placeholder{
+	font-size: 16px;
+	color:gray;
+	font-family: "PT Sans";
+}
+
+article iframe{
+	width: 90%;
+	margin:0 auto;
+}
